@@ -155,7 +155,7 @@ PRODUCT_COPY_FILES +=  \
     $(COMMON_PATH)/nrdp/nrdp_platform_capabilities.json:/vendor/etc/permissions/nrdp_platform_capabilities.json
 
 ## Overlays
-DEVICE_PACKAGE_OVERLAYS += \
+PRODUCT_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

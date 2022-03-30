@@ -63,7 +63,6 @@ PRODUCT_PACKAGES += \
 
 ## Characteristics
 PRODUCT_CHARACTERISTICS := tv
-PRODUCT_IS_ATV := true
 
 ## Codecs
 PRODUCT_COPY_FILES += \
@@ -133,10 +132,8 @@ PRODUCT_PACKAGES += \
     libpuresoftkeymasterdevice.vendor \
     libsoft_attestation_cert.vendor
 
-ifeq ($(TARGET_HAS_TEE),false)
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1-service
-endif
 
 ## Logo
 PRODUCT_HOST_PACKAGES += \

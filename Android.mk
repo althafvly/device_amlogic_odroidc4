@@ -4,9 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-ifneq ($(filter g12a g12b sm1,$(TARGET_AMLOGIC_SOC)),)
+ifeq ($(TARGET_DEVICE), odroidc4)
 
 LOCAL_PATH := $(call my-dir)
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+include $(LOCAL_PATH)/factory.mk
 
 endif

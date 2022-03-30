@@ -6,7 +6,10 @@
 
 include vendor/amlogic/g12-common/BoardConfigVendor.mk
 
-COMMON_PATH := device/amlogic/g12-common
+COMMON_PATH := device/amlogic/odroidc4
+
+## Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := odroidc4
 
 ## Android Verified Boot
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
@@ -43,6 +46,9 @@ ifneq ($(TARGET_HAS_TEE),false)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest-tee.xml
 endif
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+
+## DTB
+TARGET_DTB_NAME := sm1_s905y3_odroidc4
 
 ## Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 2

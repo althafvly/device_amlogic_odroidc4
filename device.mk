@@ -6,10 +6,14 @@
 
 $(call inherit-product, vendor/amlogic/g12-common/g12-common-vendor.mk)
 
-COMMON_PATH := device/amlogic/g12-common
+COMMON_PATH := device/amlogic/odroidc4
 
 ## AAPT
 PRODUCT_AAPT_PREF_CONFIG := tvdpi
+
+## Factory
+PRODUCT_HOST_PACKAGES += \
+    aml_image_packer
 
 ## Audio
 PRODUCT_COPY_FILES += \

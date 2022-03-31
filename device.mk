@@ -84,6 +84,9 @@ PRODUCT_PACKAGES += \
 ## fastbootd
 PRODUCT_PACKAGES += fastbootd
 
+## Remove stuff
+PRODUCT_PACKAGES += removestuff
+
 ## File-system permissions
 PRODUCT_PACKAGES += \
     fs_config_dirs \
